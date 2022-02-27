@@ -1,1 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <title>My Proposal Coach</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    
+    <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="/css/bootstrap-ie11.min.css"><script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"><\/script>');</script>
+  </head>
+
+  <body>
+    
+    <header class="header fixed">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <nav class="navbar navbar-expand" aria-label="Main">
+              
+              <a href="#" class="hamburger-btn">
+                <svg class="icon icon--hamburger" width="20" height="11" viewBox="0 0 20 11">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#hamburger"></use>
+                </svg>
+              </a>
+              <a class="navbar-brand me-auto" href="#">
+                <svg width="160" height="32" viewBox="0 0 160 32" class="icon icon--logo">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" href="images/sprite-illustrations.svg#logo"></use>
+                </svg>
+              </a>
+              <!-- Links -->
+              <ul class="navbar-nav d-flex ms-auto align-items-center">
+                <li class="nav-item d-none d-md-block">
+                  <a class="nav-link" href="#">Искам да забременея</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                  <a class="nav-link" href="#">Бременност</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                  <a class="nav-link" href="#">Бебе</a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                  <a class="nav-link" href="#">Дете 1-2</a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                  <a class="nav-link" href="#">Дете 3+</a>
+                </li>
+                <li class="d-none d-md-block">
+                  <span class="searchbox-icon">
+                    <svg class="icon" width="19" height="18" viewBox="0 0 19 18">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#search" href="images/sprite.svg#search"></use>
+                    </svg>
+                  </span>
+                  <form class="searchbox">
+                    <svg class="icon icon--close-search" width="15" height="15" viewBox="0 0 15 15">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#close-search" href="images/sprite.svg#close-search"></use>
+                    </svg>
+                    <input type="search" placeholder="Какаво търсиш" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                    <input type="submit" class="searchbox-submit">
+                  </form>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                <span class="login-link">Вход</span>
+              </span>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="hamburger-menu">
+      <div class="hidden-menu-top d-flex">	  
+        <span class="closeBtn ms-auto">
+          <svg class="icon" width="21" height="21" viewBox="0 0 21 21">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#close" href="images/sprite.svg#close"></use>
+          </svg>
+        </span>
+      </div>
+      <ul class="hidden-menu">
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+        <li><a href="#">Some link</a></li>
+      </ul>
+    </nav>
+    
+    <div class="login-popup" data-popup="login">
+      <span class="close-popup">
+        <svg class="icon" width="15" height="15" viewBox="0 0 15 15">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#close-search" href="images/sprite.svg#close-search"></use>
+        </svg>
+      </span>
+      <div class="popup-inner-wrapper">
+        <h2 class="h2 heavy-title">Влез в профила си</h2>
+        <p class="message"></p>
+        <form class="login-form" novalidate="novalidate" action="">
+          <div class="form-group">	  	  
+            <svg class="icon" width="19" height="14" viewBox="0 0 19 14">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#email" href="images/sprite.svg#email"></use>
+            </svg>
+            <input id="login-email" type="email" name="email" data-rule-required="true" data-rule-email="true" data-msg-required="Моля въведете имейл адреса си" aria-required="true">
+            <input type="hidden" name="redirect_url" value="https://ohnamama.bg/teglo-pri-bremmenost">
+            <label for="login-email" class="placeholder-label">E-mail *</label>
+          </div>
+          <div class="form-group">
+            <svg class="icon" width="15" height="15" viewBox="0 0 15 15">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#password" href="images/sprite.svg#password"></use>
+            </svg>
+            <input id="login-password" type="password" name="password" data-rule-required="true" aria-required="true">
+            <label for="login-password" class="placeholder-label">Парола *</label>
+            <span class="see-password">
+              <svg class="icon" width="16" height="10" viewBox="0 0 16 10">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#views-small" href="images/sprite.svg#views-small"></use>
+              </svg>
+            </span>
+          </div>
+          <input class="btn gtm-Login-Btn-click" type="button" value="Влез в профил">
+          <div class="other-auth-options d-flex justify-content-between">
+            <label class="check-btn">
+              <input type="checkbox">
+              <span class="box"></span>
+              <span class="text">Запомни ме</span>
+            </label>
+            <a href="https://ohnamama.bg/reset" class="forgotten-pass gtm-ForgottenPassword-click">Забравена парола</a>
+          </div>
+          <p class="gray-text text-center">Нямате регистрация?<br> <a href="https://ohnamama.bg/register" class="gtm-RegistrationLink-click">Регистрирай се тук</a></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="global-overlay"></div>
+    <div class="top"></div>
+    <main role="main">
+      <div class="container">
+        <div class="row mt-4 mb-4">
+          <div class="col">
+            <h1 class="main-title">Тегло при бременност</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-lg-8 pb-4">
+            <div class="form-wrapper pt-4 mb-4">
+              <h4 class="h4">Какво трябва да бъде теглото ми по време на бременност?</h4>
+              <form class="weight-form">             
+                <div class="with-unit">
+                  <div class="form-group">
+                    <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#weight"></use>
+                    </svg>
+                    <input type="text" id="weight-before" name="weight-before" data-rule-required="true" data-rule-number="true" data-msg-required="Моля, въведете тегло" aria-required="true">
+                    <label class="placeholder-label">Тегло преди забременяване</label>
+                  </div>
+                  <span class="unit">кг</span>
+                </div>
+                <div class="with-unit">
+                  <div class="form-group">
+                    <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#weight"></use>
+                    </svg>
+                    <input type="text" id="weight-now" name="weight-now" data-rule-required="true" data-rule-number="true" data-msg-required="Моля, въведете тегло" aria-required="true">
+                    <label class="placeholder-label">Тегло в момента</label>
+                  </div>
+                  <span class="unit">кг</span>
+                </div>
+                <div class="with-unit">
+                  <div class="form-group">
+                    <svg class="icon" width="10" height="20" viewBox="0 0 15 29">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#ruler" href="images/sprite.svg#ruler"></use>
+                    </svg>
+                    <input type="text" id="height" name="height" data-rule-required="true" data-rule-number="true" data-msg-required="Моля, въведете височина" aria-required="true">
+                    <label class="placeholder-label">Височина</label>
+                  </div>
+                  <span class="unit">см</span>
+                </div>
+                <h4 class="h4">В коя седмица си бременна?</h4>
+                <div class="form-group select-form-group">
+                  <select name="week" id="week" data-rule-required="true" data-msg-required="Моля, изберете седмица" aria-required="true">
+                    <option value="">Избери седмица</option>
+                    <option value="1">седмица 1</option>
+                    <option value="2">седмица 2</option>
+                    <option value="3">седмица 3</option>
+                    <option value="4">седмица 4</option>
+                    <option value="5">седмица 5</option>
+                    <option value="6">седмица 6</option>
+                    <option value="7">седмица 7</option>
+                    <option value="8">седмица 8</option>
+                    <option value="9">седмица 9</option>
+                    <option value="10">седмица 10</option>
+                    <option value="11">седмица 11</option>
+                    <option value="12">седмица 12</option>
+                    <option value="13">седмица 13</option>
+                    <option value="14">седмица 14</option>
+                    <option value="15">седмица 15</option>
+                    <option value="16">седмица 16</option>
+                    <option value="17">седмица 17</option>
+                    <option value="18">седмица 18</option>
+                    <option value="19">седмица 19</option>
+                    <option value="20">седмица 20</option>
+                    <option value="21">седмица 21</option>
+                    <option value="22">седмица 22</option>
+                    <option value="23">седмица 23</option>
+                    <option value="24">седмица 24</option>
+                    <option value="25">седмица 25</option>
+                    <option value="26">седмица 26</option>
+                    <option value="27">седмица 27</option>
+                    <option value="28">седмица 28</option>
+                    <option value="29">седмица 29</option>
+                    <option value="30">седмица 30</option>
+                    <option value="31">седмица 31</option>
+                    <option value="32">седмица 32</option>
+                    <option value="33">седмица 33</option>
+                    <option value="34">седмица 34</option>
+                    <option value="35">седмица 35</option>
+                    <option value="36">седмица 36</option>
+                    <option value="37">седмица 37</option>
+                    <option value="38">седмица 38</option>
+                    <option value="39">седмица 39</option>
+                    <option value="40">седмица 40</option>
+                  </select>
+                </div>
+                
+                <label class="check-btn">
+                  <input type="checkbox" name="twins" id="twins">
+                  <span class="box"></span>
+                  <span class="text">Очаквам близнаци</span>
+                </label>
+              
+                <input type="submit" class="btn btn-small" id="weight-submit-btn" value="Изчисли">
+              </form>
+            </div>
+
+            <div class="result-wrapper mb-4">
+              <h4 class="result-title">Резултат</h4>
+              <h2 class="heavy-title text-center mt-3">Твоето тегло е <span class="result-weight"></span><br><span class="accent your-weight color-theme"></span></h2>
+              <p class="text-center">Препоръчително тегло за <span class="result-week"></span> седмица е <span class="result-weights"></span></p>
+              <p><button class="btn reset">Изчисли отново</button></p>
+            </div>
+
+            <p>Използвайте нашия калкулатор за следене на теглото по време на бременност, за да разберете с колко средно се очаква да наддавате през 9-те месеца от бремеността. Повечето жени наддават между 8 кг. и 20кг. по време на бременноста си, ако носят само едно бебе. Средно една бъдеща майка се нуждае от допълнителни 300kJ в диетата си на ден за първия триместър, 600kJ през втория триместър и 900kJ през последния триместър. По време на бременност не се препоръчват диети и режими, а по- скоро консумирането на добре балансирана храна. Хранителният ви режим трябва задължително да бъде консултиран с лекар.</p>
+          </div>
+          
+          <aside class="col-4 d-none d-lg-block mt-5">
+            <h2 class="h2">Хороскопи <a href="#">Edna.bg/horoskopi</a></h2>
+            <div class="horoscope-block">
+              <header class="horoscope-header">
+                <div class="accordion">
+                  
+                  <div class="accordion-link d-flex align-items-center justify-content-between">
+                    <div class="img-sign">
+                      <img src="images/aries.svg" alt="Овен">
+                    </div>
+                    <h3></h3>
+                    <span class="accordion-arrow">
+                      <svg class="icon icon--arrow" width="12" height="8" viewBox="0 0 12 8">
+                        <use href="images/sprite.svg#arrow"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  
+                  <div class="accordion-content">
+                      <ul class="zodiac-list">
+                          <li id="z1">Овен</li>
+                          <li id="z2">Телец</li>
+                          <li id="z3">Близнаци</li>
+                          <li id="z4">Рак</li>
+                          <li id="z5">Лъв</li>
+                          <li id="z6">Дева</li>
+                          <li id="z7">Везни</li>
+                          <li id="z8">Скорпион</li>
+                          <li id="z9">Стрелец</li>
+                          <li id="z10">Козирог</li>
+                          <li id="z11">Водолей</li>
+                          <li id="z12">Риби</li>                         							
+                      </ul>
+                  </div>
+                </div>
+                <div class="horoscope-text">
+                  <small>Дневен хороскоп</small>
+                  <p></p>
+                  <a href="#">
+                    <svg class="icon" width="15" height="16" viewBox="0 0 15 16">
+                        <use href="images/sprite.svg#link"></use>
+                    </svg>
+                    Месечен хороскоп
+                  </a>
+                </div>
+              </header>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+
+      <section class="section new-overlay-section">
+        <span class="new-overlay-toggle">
+           <svg class="icon" width="12" height="8" viewBox="0 0 12 8">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#arrow" href="images/sprite.svg#arrow"></use>
+           </svg>
+          </span>
+        
+        <div class="container-fluid small-inner-wrapper">
+          <div class="row">
+            <div class="col">
+              <h2 class="heavy-title text-center">Ново</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-xl-3">
+              <article class="article-block horizontal-article">
+                <a href="#" class="img-wrapper">
+                  <img class="lazy" src="https://m4.netinfo.bg/media/images/43302/43302989/728-409-bebe-dete-kiselo-mliako.jpg" alt="Да даваме ли кисело мляко на децата?">
+                </a>
+                <div class="text-wrapper">
+                   <div class="main-info">
+                      <a href="https://ohnamama.bg/dete-1-2/hranene" class="category gtm-NewBlock-DownPopup-click">
+              Хранене                  </a>
+                      <h3 class="title"><a href="https://ohnamama.bg/dete-1-2/hranene/da-davame-li-kiselo-mliako-na-decata-343" class="gtm-NewBlock-DownPopup-click">Да даваме ли кисело мляко на децата?</a>
+                      </h3>
+                   </div>
+                </div>
+             </article>
+            </div>
+
+            <div class="col-md-4 col-xl-3">
+              <article class="article-block horizontal-article">
+                <a href="https://ohnamama.bg/lyubopitno/znameniti-roditeli-koito-sa-rodili-decata-si-chrez-surogatna-majka-1468" class="object-fit img-wrapper gtm-NewBlock-DownPopup-click">
+                <img class=" lazy  " src="https://m.netinfo.bg/media/images/49125/49125324/728-409-surogatno-majchinstvo.jpg" data-src="https://m.netinfo.bg/media/images/49125/49125324/728-409-surogatno-majchinstvo.jpg" alt="Знаменити родители, които са родили децата си чрез сурогатна майка">
+                </a>
+                <div class="text-wrapper">
+                   <div class="main-info">
+                      <a href="https://ohnamama.bg/lyubopitno/" class="category gtm-NewBlock-DownPopup-click">
+              Любопитно                  </a>
+                      <h3 class="title"><a href="https://ohnamama.bg/lyubopitno/znameniti-roditeli-koito-sa-rodili-decata-si-chrez-surogatna-majka-1468" class="gtm-NewBlock-DownPopup-click">Знаменити родители, които са родили децата си чрез сурогатна майка</a>
+                      </h3>
+                   </div>
+                </div>
+             </article>
+            </div>
+
+            <div class="col-md-4 col-xl-3">
+              <article class="article-block horizontal-article">
+                <a href="https://ohnamama.bg/bebe/razvitie-po-mesec/pyrvite-zybki-vsichko-koeto-triabva-da-znaem-121" class="object-fit img-wrapper gtm-NewBlock-DownPopup-click">
+                <img class=" lazy  " src="https://m.netinfo.bg/media/images/41776/41776230/728-409-bebe-zybi.jpg" data-src="https://m.netinfo.bg/media/images/41776/41776230/728-409-bebe-zybi.jpg" alt="Първите зъбки: всичко, което трябва да знаем">
+                </a>
+                <div class="text-wrapper">
+                   <div class="main-info">
+                      <a href="https://ohnamama.bg/bebe/razvitie-po-mesec" class="category gtm-NewBlock-DownPopup-click">
+              Развитие по месеци                  </a>
+                      <h3 class="title"><a href="https://ohnamama.bg/bebe/razvitie-po-mesec/pyrvite-zybki-vsichko-koeto-triabva-da-znaem-121" class="gtm-NewBlock-DownPopup-click">Първите зъбки: всичко, което трябва да знаем</a>
+                      </h3>
+                   </div>
+                </div>
+             </article>
+            </div>
+
+            <div class="col-xl-3 d-none d-xl-block">
+              <article class="article-block horizontal-article">
+                <a href="https://ohnamama.bg/iskam-da-zabremenea/problemi-sas-zabremenqvaneto/eto-koi-sa-hranite-koito-povishavat-fertilnostta-254" class="object-fit img-wrapper gtm-NewBlock-DownPopup-click">
+                <img class=" lazy  " src="https://m3.netinfo.bg/media/images/42581/42581501/728-409-bremennost.jpg" data-src="https://m3.netinfo.bg/media/images/42581/42581501/728-409-bremennost.jpg" alt="Ето кои са храните, които повишават фертилността">
+                </a>
+                <div class="text-wrapper">
+                   <div class="main-info">
+                      <a href="https://ohnamama.bg/iskam-da-zabremenea/problemi-sas-zabremenqvaneto" class="category gtm-NewBlock-DownPopup-click">
+              Проблеми със забременяването                  </a>
+                      <h3 class="title"><a href="https://ohnamama.bg/iskam-da-zabremenea/problemi-sas-zabremenqvaneto/eto-koi-sa-hranite-koito-povishavat-fertilnostta-254" class="gtm-NewBlock-DownPopup-click">Ето кои са храните, които повишават фертилността</a>
+                      </h3>
+                   </div>
+                </div>
+             </article>
+            </div>
+
+          </div>
+        </div>
+     </section>
+
+
+    </main>
+
+    
+  
+    <script src="js/lib/jquery.min.js"></script>   
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/lib/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
+  </body>
+</html>
