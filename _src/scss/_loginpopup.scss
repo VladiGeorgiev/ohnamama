@@ -1,0 +1,78 @@
+.login-popup {
+    opacity: 0;
+    display: none;
+    &.active {
+        display: block;
+        
+    }
+    background-color: #fefefe;
+    margin: auto;
+    max-width: 500px;
+    width: 280px;
+    position: fixed;
+    z-index: 22;
+    padding: 30px 15px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgb(0 0 0 / 20%);
+    .close-popup {
+        position: absolute;
+        right: 0;
+        top: -30px;
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0 0 6px rgb(0 0 0 / 20%);
+        background-color: #fff;
+        cursor: pointer;
+        &::after {           
+            content: '';
+            position: absolute;
+            left: -5px;
+            right: 0;
+            bottom: -6px;
+            height: 35px;
+            background-color: #fff;            
+        }
+    }
+}
+.login-form {
+    padding-bottom: 15px;
+    .form-group {
+        margin-bottom: 24px;
+    }
+    .btn {
+        width: 200px;
+        height: 40px;
+    }
+}
+.see-password {
+    position: absolute;
+    right: 18px;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    cursor: pointer;
+    width: 16px;
+}
+.other-auth-options {
+    margin-top: 18px;
+}
+@include media-breakpoint-up(md) {
+    .login-popup {
+        width: 460px;
+        padding: 30px 40px;
+    }
+    .login-form {
+        .btn {
+            width: 300px;
+            height: 46px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.icon {
+ fill: currentColor;
+ display: inline-block;
+ vertical-align: middle;
+    &--hamburger {
+        fill: #fc5e2f;
+        display: block;
+        width: 20px;
+        height: 14px;
+        margin: 42px auto 0;
+    }
+    &--logo {
+        position: absolute;
+        top: -13px;
+        width: 100%;
+    }
+    &--arrow {
+        fill: #467dfc;
+    }
+    &--close-search {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+}
+
+
+@include media-breakpoint-up(sm) {
+
+}
+@include media-breakpoint-up(md) {
+    .icon {
+        &--hamburger {
+            margin: 0 20px 0 0;
+        }
+    }
+}
+@include media-breakpoint-up(lg) {
+    
+}
+@include media-breakpoint-up(xl) {
+    
+}
+@include media-breakpoint-up(xxl) {
+    
+}

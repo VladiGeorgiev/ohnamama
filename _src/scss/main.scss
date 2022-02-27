@@ -1,1 +1,17 @@
+// main.scss
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "variables";
+@import "header";
+@import "footer";
+@import "icon";
+@import "zodiac";
+@import "calculator";
+@import "hamburger-menu";
+@import "typography";
+@import "searchbox";
+@import "loginpopup";
+@import "new-overlay-section";
 
+.container {
+    max-width: 1100px !important;
+}

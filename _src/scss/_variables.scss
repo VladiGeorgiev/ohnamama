@@ -1,0 +1,26 @@
+$color-body-bg:     #F5F7FA;
+$color-theme:       #fc5e2f;
+$color-lighter:     #2AB8D9;
+$color-black:       #323133;
+$color-text:        #28145e;
+$color-secondary:   #662483;
+$text-primary:      #009CC0;
+$text-grey:         #5b5b5b;
+$font-family-Roboto:  'Roboto', sans-serif;
+$font-family-titles:  'Poppins', sans-serif;
+
+.gray-text {
+  color: $text-grey;
+}
+.color-theme {
+  color: $color-theme;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+strong {
+  font-weight: 700;
+}
+.color-primary {
+  color: $text-primary;
+}

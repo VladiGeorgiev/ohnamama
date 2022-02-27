@@ -1,0 +1,35 @@
+h1,h2,h3,h4 {
+    color: $color-text;
+}
+a {
+    transition: color .3s;
+    text-decoration: none;
+}
+.main-title {
+    position: relative;
+    padding-bottom: 25px;
+    font-weight: 900;
+    text-align: center;
+    &::after {
+        content:'';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 198px;
+        height: 17px;
+        margin-left: -99px;
+        background: url(../images/wave-big.svg) no-repeat center/100%;
+    }
+}
+.h4 {
+    margin-bottom: 24px;
+    padding: 0 16px;
+    text-align: center;
+    font-size: 1.188rem;
+}
+.heavy-title {
+    font-weight: 700;
+    .accent {
+        font-size: 2.5rem;
+    }
+}
